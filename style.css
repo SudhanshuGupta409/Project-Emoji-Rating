@@ -10,7 +10,7 @@ body{
 .feedbackContainer{
     width: 450px;
     height: 250px;
-    background: white;
+    background: rgb(255, 255, 255);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     position: relative;
@@ -65,7 +65,7 @@ h4{
 h4.active{
     display: block;
 }
-button{
+#done{
     position: absolute;
     bottom: 5%;
     left: 50%;
@@ -81,10 +81,34 @@ button{
     cursor: pointer;
     transition: background-color 0.3s;
 }
-button:hover{
+#done:hover{
     background: rgb(74, 248, 47);
     color: black;
 }
-button.active{
+#done.active{
     display: none;
+}
+
+#again{
+    position: absolute;
+    bottom: 5%;
+    right: -5%;
+    transform: translateX(-50%);
+    display: none;
+    border: none;
+    border-radius: 4px;
+    background: rgb(133, 252, 115);
+    padding: 3px 8px;
+    color: rgb(0, 26, 255);
+    font-weight: bold;
+    box-shadow: 0px 1px 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#again.active{
+    display: block;
+}
+#again:hover{
+    background: rgb(74, 248, 47);
+    color: black;
 }
