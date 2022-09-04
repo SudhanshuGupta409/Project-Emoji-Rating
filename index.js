@@ -1,5 +1,5 @@
 
-}const starsEl = document.querySelectorAll(".fa-star");
+const starsEl = document.querySelectorAll(".fa-star");
 const emojisEl = document.querySelectorAll(".far");
 const colorsAr = ["Red", "orange", "blue", "lightgreen", "green"];
 const h4El = document.querySelector("h4");
