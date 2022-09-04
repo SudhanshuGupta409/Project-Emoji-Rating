@@ -1,8 +1,10 @@
-const starsEl = document.querySelectorAll(".fa-star");
+
+}const starsEl = document.querySelectorAll(".fa-star");
 const emojisEl = document.querySelectorAll(".far");
 const colorsAr = ["Red", "orange", "blue", "lightgreen", "green"];
 const h4El = document.querySelector("h4");
-const btnEl = document.querySelector("button");
+const btnEl = document.querySelector("#done");
+const btnAgainEl = document.querySelector("#again");
 
 updateRating(0);
 
@@ -28,9 +30,17 @@ function updateRating (index){
 
 btnEl.addEventListener("click", ()=>{
     thanks();
+});
+btnAgainEl.addEventListener("click", ()=>{
+    updateRating(0);
+    h4El.classList.remove("active");
+    btnEl.classList.remove("active");
+    btnAgainEl.classList.remove("active");
 })
 
 function thanks (){
     h4El.classList.add("active");
     btnEl.classList.add("active");
+    btnAgainEl.classList.add("active");
 }
+
